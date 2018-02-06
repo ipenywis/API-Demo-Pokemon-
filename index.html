@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<!-- OPEN THIS HTML FILE Not from Localhost for using the UI Api -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML PAGE</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="./queryApi.js"></script>
+
+</head>
+
+<body>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="main-container">
+
+        <div class="header">
+            <h3 class="text-center">Pokemons</h3>
+        </div>
+        <div class="container">
+
+            <div id="create-pokemon">
+
+                <form>
+                    <div class="form-group">
+                        <label for="pokemonName">Add Pokemon</label>
+                        <input type="text" name="pokemonName" class="form-control" placeholder="Enter Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="pokemonAbillity">Abillity</label>
+                        <input type="text" name="pokemonAbility" class="form-control" placeholder="Specify Abillity" />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block">Add Pokemon</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div id="list-pokemons">
+                <table class="table table-stripped">
+                    <tr>
+                        <th>Id</th>
+                        <th>Pokemon</th>
+                        <th>Ability</th>
+                        <th>Remove</th>
+                    </tr>
+                    <!--<tr>
+                        <td data-js="pokemonId">Hello World</td>
+                        <td data-js="pokemonName">Me</td>
+                        <td data-js="pokemonAbility">Hey</td>
+                        <td><button class="btn btn-danger" data-js="removePokemon">Remove</button></td>
+                    </tr> -->
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
